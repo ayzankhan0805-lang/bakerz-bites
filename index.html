@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bakerz Bite — fresh cakes, pastries, cookies, pies and café favourites. Where smiles are served daily.">
+  <meta name="theme-color" content="#1b120e">
+  <title>Bakerz Bite | Bakery &amp; Café</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply the saved theme before the page paints (prevents a flash) */
+    try { var t = localStorage.getItem('bb_theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61M2 2l20 20"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+<symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7M12 19V5"/></symbol>
+<symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+<symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z" fill="currentColor"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z" fill="currentColor"/></symbol>
+<symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></symbol>
+<symbol id="i-cake" viewBox="0 0 24 24"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1M2 21h20M7 8v3M12 8v3M17 8v3M7 4h.01M12 4h.01M17 4h.01"/></symbol>
+<symbol id="i-croissant" viewBox="0 0 24 24"><path d="M3 16c.6-5 4-9 9-9s8.4 4 9 9l-2.6.9c-.3-3-2.7-5.9-6.4-5.9s-6.100 2.9-6.400 5.900z"/><path d="M8 9.5 6.500 5M12 7.500V4M16 9.500 17.500 5"/></symbol>
+<symbol id="i-cookie" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5z"/><path d="M8.500 8.500v.01M16 15.500v.01M12 12v.01M11 17v.01M7 14v.01"/></symbol>
+<symbol id="i-pie" viewBox="0 0 24 24"><path d="M3 10c0-3 4-5 9-5s9 2 9 5"/><path d="M2 10h20l-2 9a2 2 0 0 1-2 1.500H6A2 2 0 0 1 4 19z"/><path d="M8 13v3M12 13v3M16 13v3"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.900 5.100L19 10l-5.100 1.900L12 17l-1.900-5.100L5 10l5.100-1.900zM19 16l.7 1.800L21.500 18.500l-1.800.7L19 21l-.7-1.800L16.500 18.500l1.800-.7z"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+<symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.500 8a2.500 2.500 0 0 1 0-5C11 3 12 8 12 8s1-5 4.500-5a2.500 2.500 0 0 1 0 5"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+</defs></svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER ===== -->
+  <div class="top-strip">
+    <div class="wrap top-strip-inner">
+      <span class="ts-item"><svg class="ic " aria-hidden="true"><use href="#i-flame"/></svg> Freshly baked with love, every day</span>
+      <span class="top-strip-right"><a class="ts-item" href="tel:+923001234567"><svg class="ic " aria-hidden="true"><use href="#i-phone"/></svg> +92 300 1234567</a><span class="dot">•</span><span class="ts-item"><svg class="ic " aria-hidden="true"><use href="#i-clock"/></svg> 9 AM – 10 PM</span></span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home" aria-label="Bakerz Bite — home">
+        <img class="brand-logo" src="assets/logo-small.png" alt="" width="52" height="52">
+        <span class="brand-text"><span class="bn">Bakerz <b>Bite</b></span><small>Bakery &amp; Café</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home" class="nav-link" data-spy="home">Home</a>
+        <div class="nav-drop">
+          <button class="nav-link drop-btn" type="button" aria-expanded="false" aria-haspopup="true" data-spy="menu">Our Menu <span class="caret" aria-hidden="true"><svg class="ic " aria-hidden="true"><use href="#i-chevron"/></svg></span></button>
+          <div class="drop-panel">
+            <a href="#menu" data-category="All">All treats</a>
+            <a href="#menu" data-category="Cakes"><svg class="ic " aria-hidden="true"><use href="#i-cake"/></svg> Cakes</a>
+            <a href="#menu" data-category="Pastries"><svg class="ic " aria-hidden="true"><use href="#i-croissant"/></svg> Pastries</a>
+            <a href="#menu" data-category="Cookies"><svg class="ic " aria-hidden="true"><use href="#i-cookie"/></svg> Cookies</a>
+            <a href="#menu" data-category="Pies"><svg class="ic " aria-hidden="true"><use href="#i-pie"/></svg> Pies &amp; Tarts</a>
+            <a href="#menu" data-category="Merchandise"><svg class="ic " aria-hidden="true"><use href="#i-bag"/></svg> Merchandise</a>
+          </div>
+        </div>
+        <a href="#offers" class="nav-link" data-spy="offers">Offers</a>
+        <a href="#gallery" class="nav-link" data-spy="gallery">Gallery</a>
+        <a href="#about" class="nav-link" data-spy="about">About</a>
+        <a href="#faq" class="nav-link" data-spy="faq">FAQ</a>
+        <a href="#contact" class="nav-link" data-spy="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" title="Switch theme"><svg class="ic " aria-hidden="true"><use href="#i-sun"/></svg></button>
+        <button class="icon-btn cart-btn" id="cartBtn" type="button" aria-label="Open cart"><svg class="ic " aria-hidden="true"><use href="#i-cart"/></svg><span class="cart-count" id="cartCount" hidden>0</span></button>
+        <a class="btn btn-outline account-btn" id="accountBtn" href="login.html" aria-label="Login or Sign up"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg><span class="account-label">Login / Sign Up</span></a>
+        <a class="btn btn-primary nav-cta" href="#menu">Order Treats</a>
+        <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-media" id="heroMedia">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/videos/hero.mp4" type="video/mp4">
+          <source src="assets/videos/hero.webm" type="video/webm">
+        </video>
+        <img class="hero-img" src="assets/photos/hero.jpg" data-srcs="assets/photos/hero.jpg|assets/photos/hero.webp|assets/images/hero.svg" data-i="0" alt="" data-fallback="Cakes" fetchpriority="high">
+      </div>
+      <div class="hero-shade"></div> 
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><svg class="ic " aria-hidden="true"><use href="#i-sparkle"/></svg> Baked fresh, served happy</span>
+          <h1>Little bites.<br><em>Big smiles.</em></h1>
+          <p>From celebration cakes to buttery croissants — handmade goodness baked fresh every morning with real butter, fresh cream and carefully chosen ingredients.</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary btn-lg">Explore Our Menu <svg class="ic " aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            <a href="#kitchen" class="btn btn-ghost btn-lg"><svg class="ic " aria-hidden="true"><use href="#i-play"/></svg> Watch Our Kitchen</a>
+          </div>
+          <ul class="hero-points">
+            <li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg> Real butter</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg> Fresh cream</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg> Baked daily</li>
+          </ul>
+        </div>
+        <div class="visitor-pill" title="Visitors on this browser/site"><svg class="ic " aria-hidden="true"><use href="#i-users"/></svg> Visitors <strong id="visitorCount">—</strong></div>
+      </div>
+      <a class="scroll-cue" href="#menu" aria-label="Scroll to menu"><span>Scroll to taste</span><i aria-hidden="true"><svg class="ic " aria-hidden="true"><use href="#i-arrow-down"/></svg></i></a>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats" aria-label="Bakerz Bite at a glance">
+      <div class="wrap stats-grid">
+        <div class="stat"><strong data-count="40">0</strong><span>Fresh items daily</span></div>
+        <div class="stat"><strong data-count="5">0</strong><span>Menu categories</span></div>
+        <div class="stat"><strong data-count="12">0</strong><span>Hours open daily</span></div>
+        <div class="stat"><strong data-count="100" data-suffix="%">0</strong><span>Real butter &amp; cream</span></div>
+      </div>
+    </section>
+
+    <!-- ===== INTRO ===== -->
+    <section class="section intro">
+      <div class="wrap intro-grid reveal">
+        <div>
+          <span class="kicker">A little about us</span>
+          <h2 class="title">Made with care.<br><em>Shared with love.</em></h2>
+        </div>
+        <p class="lead">At Bakerz Bite every recipe starts with quality ingredients and one simple promise: serve food we'd be proud to share with our own family. From everyday coffee breaks to life's sweetest celebrations, there's always something fresh coming out of our oven.</p>
+      </div>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section class="section menu" id="menu">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Fresh from our kitchen</span>
+          <h2 class="title">Find your <em>favourite</em></h2>
+          <p>Pick a category, search your craving, and tap any treat to see its ingredients.</p>
+        </div>
+
+        <div class="controls reveal">
+          <div class="pills" id="categoryPills" role="tablist" aria-label="Menu categories">
+            <button class="pill active" type="button" data-category="All">All treats</button>
+            <button class="pill" type="button" data-category="Cakes"><svg class="ic " aria-hidden="true"><use href="#i-cake"/></svg> Cakes</button>
+            <button class="pill" type="button" data-category="Pastries"><svg class="ic " aria-hidden="true"><use href="#i-croissant"/></svg> Pastries</button>
+            <button class="pill" type="button" data-category="Cookies"><svg class="ic " aria-hidden="true"><use href="#i-cookie"/></svg> Cookies</button>
+            <button class="pill" type="button" data-category="Pies"><svg class="ic " aria-hidden="true"><use href="#i-pie"/></svg> Pies</button>
+            <button class="pill" type="button" data-category="Merchandise"><svg class="ic " aria-hidden="true"><use href="#i-bag"/></svg> Merchandise</button>
+          </div>
+          <div class="control-right">
+            <label class="search-box"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg><input type="search" id="productSearch" placeholder="Search the menu…" aria-label="Search menu"></label>
+            <select id="productSort" class="select" aria-label="Sort items">
+              <option value="featured">Sort: Featured</option>
+              <option value="low">Price: Low to High</option>
+              <option value="high">Price: High to Low</option>
+              <option value="az">Name: A – Z</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+        <div class="product-grid" id="productGrid"><!-- rendered by js/script.js --></div>
+        <p class="empty-state" id="emptyState" hidden>No items match your search. Try another word or category.</p>
+      </div>
+    </section>
+
+    <!-- ===== OFFERS ===== -->
+    <section class="section offers" id="offers">
+      <div class="wrap">
+        <div class="offer-panel reveal">
+          <div class="offer-copy">
+            <span class="kicker kicker-dark">A little extra sweetness</span>
+            <h2 class="title">Good days deserve<br><em>great treats.</em></h2>
+            <p>Make your next bakery run a little more special with our in-store offers.</p>
+          </div>
+          <div class="offer-cards">
+            <article class="offer-card"><span class="offer-label">Weekday treat</span><strong>15% OFF</strong><p>Selected pastries, Monday to Thursday.</p><small>Show this offer in store</small></article>
+            <article class="offer-card hot"><span class="offer-label">Celebration</span><strong>FREE MINI</strong><p>Get a mini treat with selected celebration cakes.</p><small>Ask our team for details</small></article>
+            <article class="offer-card"><span class="offer-label">Coffee break</span><strong>BUY 2 GET 1</strong><p>On selected cookies, every evening after 6 PM.</p><small>While stocks last</small></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VIDEO ===== -->
+    <section class="section kitchen" id="kitchen">
+      <div class="wrap kitchen-grid">
+        <div class="reveal">
+          <span class="kicker">Behind the counter</span>
+          <h2 class="title">Inside our <em>kitchen</em></h2>
+          <p class="muted">Watch how dough becomes golden croissants and how every cake gets its finishing touch. Everything you see is made fresh in-store, every single morning.</p>
+          <ul class="tick-list">
+            <li>Hand-folded laminated pastry</li>
+            <li>Cakes decorated to order</li>
+            <li>Small batches, always warm</li>
+          </ul>
+        </div>
+        <div class="video-card reveal" id="videoCard">
+          <video id="kitchenVideo" controls playsinline preload="metadata">
+            <source src="assets/videos/kitchen.mp4" type="video/mp4">
+            <source src="assets/videos/kitchen.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-fallback" id="videoFallback" hidden>
+            <img src="" alt="" data-fallback="Cakes" data-src="assets/images/about.svg">
+            <div class="video-fallback-msg"><span class="play-badge"><svg class="ic " aria-hidden="true"><use href="#i-play"/></svg></span><b>Kitchen video coming soon</b><small>Add <code>assets/videos/kitchen.mp4</code> to play it here.</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="section gallery" id="gallery">
+      <div class="gallery-doodles" aria-hidden="true"><svg class="doodle doodle-cupcake" viewBox="0 0 120 150" aria-hidden="true"><path d="M26 78 36 138h48l10-60z"/><path d="M42 80l6 56M60 80v56M78 80l-6 56"/><path d="M20 78c0-10 8-16 18-16 0-12 10-20 22-20s22 8 22 20c10 0 18 6 18 16z"/><path d="M60 42c0-10 4-18 12-24 4 6 4 14-2 22"/></svg><svg class="doodle doodle-cookie" viewBox="0 0 160 130" aria-hidden="true"><circle cx="58" cy="58" r="46"/><path d="M40 44h.01M64 36h.01M76 62h.01M48 74h.01M66 84h.01M32 62h.01" stroke-width="6"/><path d="M118 96c-14-18 8-40 26-34 4 22-8 40-26 34z"/><path d="M120 94c8-12 14-20 22-28"/></svg></div>
+      <div class="wrap">
+        <div class="section-head gallery-head reveal">
+          <span class="kicker">A feast for the eyes</span>
+          <h2 class="title gallery-title"><svg class="spark spark-l" viewBox="0 0 44 56" aria-hidden="true"><path d="M8 6l28 10M4 28h30M8 50l28-10"/></svg><span>Freshly <em>pictured</em></span><svg class="spark spark-r" viewBox="0 0 44 56" aria-hidden="true"><path d="M36 6 8 16M40 28H10M36 50 8 40"/></svg></h2>
+          <p>A peek at the little moments coming out of our kitchen. Tap a photo to enlarge it.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"><!-- rendered by js/script.js --></div>
+      </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="section reviews" id="reviews">
+      <div class="wrap reviews-grid">
+        <div class="reveal">
+          <span class="kicker">Your words matter</span>
+          <h2 class="title">Share a little <em>love.</em></h2>
+          <p class="muted">Tried something delicious? Leave a rating and feedback to help us make every visit even better.</p>
+          <div class="rating-summary">
+            <strong id="averageRating">4.8</strong>
+            <div><div class="stars" id="averageStars" aria-hidden="true">★★★★★</div><small id="ratingCount">Customer rating</small></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <form class="review-form" id="reviewForm" novalidate>
+            <div class="form-row">
+              <div class="field"><label for="reviewName">Your name</label><input id="reviewName" name="name" required maxlength="40" placeholder="e.g. Ayesha"></div>
+              <div class="field"><label for="reviewRating">Your rating</label>
+                <select id="reviewRating" name="rating" required>
+                  <option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Very good</option><option value="3">★★★☆☆ — Good</option><option value="2">★★☆☆☆ — Fair</option><option value="1">★☆☆☆☆ — Needs improvement</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="reviewMessage">Your feedback</label><textarea id="reviewMessage" name="message" rows="3" required maxlength="400" placeholder="Tell us about your favourite treat…"></textarea></div>
+            <button class="btn btn-primary" type="submit">Submit Feedback <svg class="ic " aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+            <p class="form-note" id="reviewNotice" aria-live="polite">Feedback is saved in this browser only (no server connected).</p>
+          </form>
+          <div class="review-list" id="reviewList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-photo reveal"><img src="assets/photos/about.jpg" data-srcs="assets/photos/about.jpg|assets/photos/about.webp|assets/images/about.svg" data-i="0" alt="Baker preparing fresh pastries" loading="lazy" data-fallback="Pastries"><span class="about-badge">Since day one<br><b>Baked fresh</b></span></div>
+        <div class="reveal">
+          <span class="kicker">Our story</span>
+          <h2 class="title">Where smiles are<br><em>served daily.</em></h2>
+          <p class="muted">Bakerz Bite is a bakery and café built around freshness, thoughtful ingredients and the joy of sharing. Our menu brings together artisan pastries, gourmet cakes, cookies, pies, desserts and handcrafted beverages.</p>
+          <p class="muted">We use real butter, cream and unbleached flour because quality belongs in every bite. Whether you're celebrating a milestone or stopping by for a coffee, we're happy you're here.</p>
+          <a href="#contact" class="text-link">Come say hello <svg class="ic " aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="wrap narrow">
+        <div class="section-head reveal"><span class="kicker">Need to know?</span><h2 class="title">Frequently asked <em>questions</em></h2></div>
+        <div class="faq-list reveal">
+          <details open><summary>Are your products baked fresh daily?</summary><p>Yes. Our bakery team prepares a wide selection of baked goods fresh in-store every day. Availability may vary by time of day.</p></details>
+          <details><summary>Can I order a celebration cake?</summary><p>Yes — contact our team with your preferred size, flavour, design and collection date and we'll take care of the rest.</p></details>
+          <details><summary>Where can I find ingredient information?</summary><p>Tap any menu item to see its description and ingredient list. Please speak to our staff about allergies or dietary requirements before ordering.</p></details>
+          <details><summary>Do you sell Bakerz Bite merchandise?</summary><p>Yes — branded mugs, tote bags, glasses and serving trays are available in the Merchandise category. Contact the store to confirm current stock.</p></details>
+          <details><summary>What are your opening hours?</summary><p>We're open every day from 9 AM to 10 PM.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <div class="contact-panel reveal">
+          <div>
+            <span class="kicker">Let's connect</span>
+            <h2 class="title">Your next sweet<br><em>moment starts here.</em></h2>
+            <p class="muted">Questions, cake orders or just want to say hello? We'd love to hear from you.</p>
+          </div>
+          <div class="contact-details">
+            <p><span class="ci"><svg class="ic " aria-hidden="true"><use href="#i-pin"/></svg></span><span><b>Visit us</b><br>123 Bakery Street, Karachi, Pakistan</span></p>
+            <p><span class="ci"><svg class="ic " aria-hidden="true"><use href="#i-mail"/></svg></span><span><b>Email us</b><br><a href="mailto:hello@bakerzbite.example">hello@bakerzbite.example</a></span></p>
+            <p><span class="ci"><svg class="ic " aria-hidden="true"><use href="#i-phone"/></svg></span><span><b>Call us</b><br><a href="tel:+923001234567">+92 300 1234567</a></span></p>
+            <a class="btn btn-primary" href="mailto:hello@bakerzbite.example">Send an Email <svg class="ic " aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER + SITE MAP ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#home"><img class="brand-logo" src="assets/logo-small.png" alt="" width="52" height="52"><span class="brand-text"><span class="bn">Bakerz <b>Bite</b></span><small>Bakery &amp; Café</small></span></a>
+          <p>Where smiles are served daily.</p>
+        </div>
+        <nav class="sitemap" id="sitemap" aria-label="Site map">
+          <h3>Site Map</h3>
+          <div class="sitemap-cols">
+            <ul><li><a href="#home">Home</a></li><li><a href="#menu">Our Menu</a></li><li><a href="#offers">Offers</a></li><li><a href="#kitchen">Kitchen Video</a></li></ul>
+            <ul><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Feedback &amp; Rating</a></li><li><a href="#about">About Us</a></li><li><a href="#faq">FAQ</a></li></ul>
+            <ul><li><a href="#contact">Contact Us</a></li><li><a href="#menu" data-category="Cakes">Cakes</a></li><li><a href="#menu" data-category="Pastries">Pastries</a></li><li><a href="#menu" data-category="Merchandise">Merchandise</a></li><li><a href="login.html">Login</a></li><li><a href="login.html#signup">Sign Up</a></li></ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Bakerz Bite. Student eProject.</span><span>Made with <svg class="ic heart" aria-hidden="true"><use href="#i-heart"/></svg> and fresh ingredients.</span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden><svg class="ic " aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+
+  <!-- ===== TICKER (date / time / location) ===== -->
+  <div class="ticker" role="status" aria-label="Current date, time and location">
+    <div class="ticker-track" id="tickerTrack">
+      <div class="ticker-group">
+        <span class="ts-item"><svg class="ic " aria-hidden="true"><use href="#i-clock"/></svg> <span class="js-time">Loading…</span></span>
+        <button type="button" class="ticker-loc js-loc-btn" title="Click to share your exact location"><svg class="ic " aria-hidden="true"><use href="#i-pin"/></svg> <span class="js-loc">Locating…</span></button>
+        <span class="ts-item"><svg class="ic " aria-hidden="true"><use href="#i-cake"/></svg> BAKERZ BITE · WHERE SMILES ARE SERVED DAILY</span>
+        <span class="ts-item"><svg class="ic " aria-hidden="true"><use href="#i-flame"/></svg> Freshly baked with love, every day</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PRODUCT MODAL ===== -->
+  <dialog class="modal" id="productModal" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" data-close aria-label="Close"><svg class="ic " aria-hidden="true"><use href="#i-x"/></svg></button>
+    <div class="modal-body">
+      <div class="modal-img"><img id="modalImage" src="" alt=""></div>
+      <div class="modal-copy">
+        <span class="kicker" id="modalCategory"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <h3 id="modalIngLabel">Ingredients</h3>
+        <p id="modalIngredients" class="ingredients"></p>
+        <div class="modal-foot">
+          <div class="modal-price" id="modalPrice"></div>
+          <div class="modal-actions">
+            <button class="btn btn-primary" id="modalAddCart" type="button"><svg class="ic " aria-hidden="true"><use href="#i-cart"/></svg> Add to Cart</button>
+            <a class="btn btn-outline" id="modalOrder" target="_blank" rel="noopener">Order on WhatsApp</a>
+          </div>
+        </div>
+        <p class="allergy"><svg class="ic " aria-hidden="true"><use href="#i-info"/></svg> Please ask our staff about allergens before ordering.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ===== CART ===== -->
+  <dialog class="modal cart-drawer" id="cartDrawer" aria-labelledby="cartTitle">
+    <div class="cart-head">
+      <h2 id="cartTitle">Your Cart</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close cart"><svg class="ic " aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot" id="cartFoot">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">Rs. 0</strong></div>
+      <a class="btn btn-primary btn-block" id="cartOrder" target="_blank" rel="noopener">Order on WhatsApp <svg class="ic " aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      <button class="cart-clear" id="cartClear" type="button">Clear cart</button>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" popover="manual" role="status" aria-live="polite"></div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <dialog class="modal lightbox" id="lightbox" aria-label="Gallery image">
+    <button class="modal-close" type="button" data-close aria-label="Close"><svg class="ic " aria-hidden="true"><use href="#i-x"/></svg></button>
+    <button class="lb-nav lb-prev" type="button" id="lbPrev" aria-label="Previous photo">‹</button>
+    <figure><img id="lbImage" src="" alt=""><figcaption id="lbCaption"></figcaption></figure>
+    <button class="lb-nav lb-next" type="button" id="lbNext" aria-label="Next photo">›</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
